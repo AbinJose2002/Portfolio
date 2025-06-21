@@ -1,10 +1,7 @@
-import React from 'react'
 import '../style/Timeline.css'
 import TimeLineCard from '../shared_component/TimeLineCard';
 
-type Props = {}
-
-const Timeline = (props: Props) => {
+const Timeline = () => {
 
   const educationData = [
   {

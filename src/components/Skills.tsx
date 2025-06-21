@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from 'react'
 import "../style/Fonts.css";
 import "../style/Skill.css";
 import python from "../assets/python.png";
@@ -22,9 +23,7 @@ import mysql from '../assets/mysql.png'
 import figma from '../assets/figma.png'
 import dropDown from '../assets/icon-dropdown.png'
 
-type Props = {};
-
-const Skills = (props: Props) => {
+const Skills = () => {
   const skillsData = [
     { name: "Python", category: "backend", icon: python },
     { name: "Java", category: "backend", icon: java },
@@ -46,15 +45,6 @@ const Skills = (props: Props) => {
     { name: "MongoDB", category: "database", icon: mongo },
     { name: "Figma", category: "design", icon: figma },
   ];
-
-  const glassEffect: React.CSSProperties = {
-  background: "rgba(255, 255, 255, 0.25)",
-  boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-  backdropFilter: "blur(4px)",
-  WebkitBackdropFilter: "blur(4px)", // vendor-prefixed property
-  borderRadius: "10px",
-  border: "1px solid rgba(255, 255, 255, 0.18)",
-};
 
  const achievements = [
   {
@@ -136,7 +126,7 @@ const skillData = ["Collaboration and Teamwork", "Problem-Solving", "Leadership"
             </h1>
             <ul style={{textAlign: "justify", fontFamily: "Bebas Neue", wordSpacing: "4px"}}>
               {skillData.map((item,index)=>(
-                <li>{item}</li>
+                <li key={index}>{item}</li>
               ))}
             </ul>
           </div>

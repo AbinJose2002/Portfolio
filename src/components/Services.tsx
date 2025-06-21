@@ -4,9 +4,7 @@ import frontend from '../assets/backend.png'
 import backend from '../assets/backend.jpg'
 import mentor from '../assets/mentor.jpg'
 
-type Props = {}
-
-const Services = (props: Props) => {
+const Services = () => {
   return (
     <div className='my-5'  id="services">
         <h1 style={{

@@ -1,13 +1,11 @@
-import { useState} from 'react';
 import '../style/Hero.css';
 import '../style/Fonts.css'
 import '../style/Skill.css'
 import pic from '../assets/pic.png';
 import Button from '../shared_component/Button';
 
-type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
 
 
   return (

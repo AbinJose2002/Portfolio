@@ -3,7 +3,7 @@ import React, { type CSSProperties } from 'react'
 type Props = {
     classname?:string;
     value?:string;
-    style?:React.CSSProperties;
+    style?:CSSProperties;
 }
 
 const Button = (props: Props) => {

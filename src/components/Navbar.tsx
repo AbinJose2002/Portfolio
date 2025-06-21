@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const navElements = {
     Home: '',
     Skills: '#skills',
