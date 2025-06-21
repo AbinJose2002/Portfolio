@@ -1,5 +1,4 @@
 import { useState } from "react";
-import React from 'react'
 import "../style/Fonts.css";
 import "../style/Skill.css";
 import python from "../assets/python.png";
